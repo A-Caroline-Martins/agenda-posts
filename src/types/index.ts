@@ -21,7 +21,6 @@ export interface Usuario {
   nome: string;
   email: string;
   tipo: TipoConta;
-  // Obrigatório quando tipo === "cliente": a empresa que esse usuário representa
   clienteId?: string;
 }
 
@@ -37,7 +36,7 @@ export interface Comentario {
   id: string;
   autorId: string;
   texto: string;
-  criadoEm: string; // ISO 8601
+  criadoEm: string;
 }
 
 export interface EventoHistorico {
@@ -54,7 +53,7 @@ export interface Post {
   redeSocial: RedeSocial;
   formato: FormatoPost;
   midias: string[];
-  dataHoraPublicacao: string; // ISO 8601
+  dataHoraPublicacao: string;
   status: StatusPost;
   criadoPor: string;
   comentarios: Comentario[];
