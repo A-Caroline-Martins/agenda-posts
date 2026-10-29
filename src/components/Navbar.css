@@ -13,7 +13,7 @@
 }
 
 .navbar__links a:hover {
-  color: var(--cor-primaria);
+  color: var(--cor-link);
 }
 
 .navbar__usuario {

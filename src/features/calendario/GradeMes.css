@@ -1,0 +1,32 @@
+/* GradeMes.css */
+.grade-mes__semana,
+.grade-mes__dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 colunas iguais */
+}
+
+.grade-mes__nome-dia {
+  padding: 12px 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.grade-mes__dias {
+  grid-auto-rows: minmax(120px, 1fr);
+  border-top: 1px solid var(--cor-borda-grade);
+  border-left: 1px solid var(--cor-borda-grade);
+}
+
+.grade-mes__dia {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  border-right: 1px solid var(--cor-borda-grade);
+  border-bottom: 1px solid var(--cor-borda-grade);
+  overflow: hidden;
+}
+
+.grade-mes__dia--fora-do-mes {
+  opacity: 0.4;
+}

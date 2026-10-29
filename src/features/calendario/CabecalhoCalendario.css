@@ -1,0 +1,61 @@
+.cabecalho-calendario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.cabecalho-calendario__add {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--cor-texto-sobre-primaria);
+  background: var(--cor-primaria);
+  border-radius: 12px;
+}
+
+.cabecalho-calendario__add:hover {
+  background: var(--cor-primaria-hover);
+}
+
+.cabecalho-calendario__navegacao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cabecalho-calendario__mes {
+  min-width: 140px; /* evita que as setas "pulem" quando o nome do mês muda */
+  font-size: 1.75rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize; /* out/2026 → Out/2026 */
+}
+
+.cabecalho-calendario__seta {
+  display: flex;
+  padding: 4px;
+  color: var(--cor-texto);
+  background: none;
+  border: none;
+  border-radius: 50%;
+}
+
+.cabecalho-calendario__seta:hover {
+  background: var(--cor-painel);
+}
+
+.cabecalho-calendario__hoje {
+  padding: 6px 14px;
+  color: var(--cor-texto);
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+}
+
+.cabecalho-calendario__hoje:hover {
+  border-color: var(--cor-secundaria);
+}

@@ -1,7 +1,7 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import { AuthProvider } from "../features/auth/AuthProvider";
 import RotaProtegida from "./RotaProtegida";
-import App from "../App";
+import Layout from "../components/Layout";
 import Login from "../pages/Login";
 import Calendario from "../pages/Calendario";
 import DetalhesPost from "../pages/DetalhesPost";
@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
         children: [
           {
             path: "/",
-            element: <App />,
+            element: <Layout />,
             children: [
               { index: true, element: <Calendario /> },
               { path: "posts/:id", element: <DetalhesPost /> },

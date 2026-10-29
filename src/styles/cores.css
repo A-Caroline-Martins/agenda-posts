@@ -1,0 +1,54 @@
+:root {
+  /* ===== PALETA ===== */
+
+  /* Marca */
+  --amarelo-400: #ffbe0b;
+  --laranja-400: #ff914d;
+  --laranja-500: #fe9700;
+  --laranja-600: #e08600; /* hover dos botões */
+  --laranja-700: #c2410c; /* textos e links laranja sobre branco */
+  --branco: #ffffff;
+
+  /* Neutros quentes */
+  --areia-50: #fffaf5;
+  --areia-100: #fdf0e3;
+  --areia-200: #f3e1cf;
+  --areia-300: #e6cdb5;
+  --marrom-500: #8a6a55;
+  --marrom-900: #2b1a0e;
+
+  /* Feedback */
+  --vermelho-600: #dc2626;
+  --verde-600: #16a34a;
+  --azul-600: #2563eb;
+
+  /* ===== TOKENS ===== */
+
+  /* Marca */
+  --cor-primaria: var(--laranja-500);
+  --cor-primaria-hover: var(--laranja-600);
+  --cor-texto-sobre-primaria: var(--marrom-900);
+  --cor-secundaria: var(--laranja-400);
+  --cor-destaque: var(--amarelo-400);
+  --cor-link: var(--laranja-700);
+
+  /* Base */
+  --cor-texto: var(--marrom-900);
+  --cor-texto-suave: var(--marrom-500);
+  --cor-fundo: var(--areia-50);
+  --cor-superficie: var(--branco);
+  --cor-painel: var(--areia-100);
+  --cor-borda: var(--areia-200);
+  --cor-borda-grade: var(--areia-300);
+
+  /* Feedback */
+  --cor-erro: var(--vermelho-600);
+  --cor-sucesso: var(--verde-600);
+
+  /* Status dos posts */
+  --cor-status-rascunho: var(--marrom-500);
+  --cor-status-aguardando: var(--amarelo-400);
+  --cor-status-ajustes: var(--vermelho-600);
+  --cor-status-aprovado: var(--verde-600);
+  --cor-status-publicado: var(--azul-600);
+}
