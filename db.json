@@ -1,0 +1,120 @@
+{
+  "usuarios": [
+    { "id": "u1", "nome": "Admin Agência", "email": "admin@agencia.com", "tipo": "admin" },
+    { "id": "u2", "nome": "Ana Souza", "email": "ana@padariaflor.com", "tipo": "cliente", "clienteId": "c1" },
+    { "id": "u3", "nome": "Bruno Lima", "email": "bruno@fitlife.com", "tipo": "cliente", "clienteId": "c2" }
+  ],
+  "clientes": [
+    {
+      "id": "c1",
+      "nome": "Padaria Flor",
+      "logo": "https://picsum.photos/seed/padaria/200",
+      "redesSociais": ["instagram", "facebook"],
+      "responsavel": "Ana Souza"
+    },
+    {
+      "id": "c2",
+      "nome": "FitLife Academia",
+      "logo": "https://picsum.photos/seed/fitlife/200",
+      "redesSociais": ["instagram", "tiktok", "youtube", "linkedin"],
+      "responsavel": "Bruno Lima"
+    }
+  ],
+  "posts": [
+    {
+      "id": "p1",
+      "clienteId": "c1",
+      "titulo": "Pão de fermentação natural",
+      "legenda": "Saiu do forno agora! 🥖 Nosso pão de fermentação natural está disponível todos os dias a partir das 7h. #padaria #paonatural",
+      "redeSocial": "instagram",
+      "formato": "imagem",
+      "midias": ["https://picsum.photos/seed/pao/1080/1080"],
+      "dataHoraPublicacao": "2026-11-03T09:00:00",
+      "status": "aprovado",
+      "criadoPor": "u1",
+      "comentarios": [],
+      "historico": [
+        { "status": "rascunho", "usuarioId": "u1", "data": "2026-10-27T10:00:00" },
+        { "status": "aguardando_aprovacao", "usuarioId": "u1", "data": "2026-10-27T11:00:00" },
+        { "status": "aprovado", "usuarioId": "u2", "data": "2026-10-28T08:30:00" }
+      ]
+    },
+    {
+      "id": "p2",
+      "clienteId": "c1",
+      "titulo": "Promoção de café da manhã",
+      "legenda": "Combo café + pão de queijo por R$ 9,90 durante todo o mês de novembro ☕",
+      "redeSocial": "facebook",
+      "formato": "carrossel",
+      "midias": [
+        "https://picsum.photos/seed/cafe1/1080/1080",
+        "https://picsum.photos/seed/cafe2/1080/1080",
+        "https://picsum.photos/seed/cafe3/1080/1080"
+      ],
+      "dataHoraPublicacao": "2026-11-05T07:30:00",
+      "status": "aguardando_aprovacao",
+      "criadoPor": "u1",
+      "comentarios": [],
+      "historico": [
+        { "status": "aguardando_aprovacao", "usuarioId": "u1", "data": "2026-10-28T14:00:00" }
+      ]
+    },
+    {
+      "id": "p3",
+      "clienteId": "c2",
+      "titulo": "Treino de 15 minutos",
+      "legenda": "Sem tempo? Esse treino de 15 minutos resolve! 💪 Salve para fazer depois.",
+      "redeSocial": "instagram",
+      "formato": "reels",
+      "midias": ["https://www.w3schools.com/html/mov_bbb.mp4"],
+      "dataHoraPublicacao": "2026-11-04T18:00:00",
+      "status": "ajustes_solicitados",
+      "criadoPor": "u1",
+      "comentarios": [
+        {
+          "id": "cm1",
+          "autorId": "u3",
+          "texto": "Pode trocar a música por algo mais animado?",
+          "criadoEm": "2026-10-28T16:20:00"
+        }
+      ],
+      "historico": [
+        { "status": "aguardando_aprovacao", "usuarioId": "u1", "data": "2026-10-28T10:00:00" },
+        { "status": "ajustes_solicitados", "usuarioId": "u3", "data": "2026-10-28T16:20:00" }
+      ]
+    },
+    {
+      "id": "p4",
+      "clienteId": "c2",
+      "titulo": "Desafio do agachamento",
+      "legenda": "Topa o desafio? 30 dias de agachamento 🔥 #fitlife #desafio",
+      "redeSocial": "tiktok",
+      "formato": "video",
+      "midias": ["https://www.w3schools.com/html/mov_bbb.mp4"],
+      "dataHoraPublicacao": "2026-11-06T12:00:00",
+      "status": "rascunho",
+      "criadoPor": "u1",
+      "comentarios": [],
+      "historico": [
+        { "status": "rascunho", "usuarioId": "u1", "data": "2026-10-29T09:00:00" }
+      ]
+    },
+    {
+      "id": "p5",
+      "clienteId": "c2",
+      "titulo": "Nova unidade inaugurada",
+      "legenda": "Temos o prazer de anunciar a inauguração da nossa nova unidade no centro da cidade.",
+      "redeSocial": "linkedin",
+      "formato": "imagem",
+      "midias": ["https://picsum.photos/seed/unidade/1200/627"],
+      "dataHoraPublicacao": "2026-10-27T10:00:00",
+      "status": "publicado",
+      "criadoPor": "u1",
+      "comentarios": [],
+      "historico": [
+        { "status": "aprovado", "usuarioId": "u3", "data": "2026-10-24T15:00:00" },
+        { "status": "publicado", "usuarioId": "u1", "data": "2026-10-27T10:00:00" }
+      ]
+    }
+  ]
+}
