@@ -1,7 +1,7 @@
 function Clientes() {
   return (
-    <main className="p-6">
-      <h1 className="text-2xl font-bold">Clientes</h1>
+    <main className="pagina">
+      <h1 className="pagina__titulo">Clientes</h1>
     </main>
   );
 }

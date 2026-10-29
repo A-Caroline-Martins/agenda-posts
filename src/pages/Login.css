@@ -1,0 +1,67 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 384px;
+  padding: 32px;
+  background: var(--cor-superficie);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+.login__titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.login__label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.login__input {
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px 12px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 4px;
+}
+
+.login__input:focus {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: -1px;
+}
+
+.login__erro {
+  margin-top: 4px;
+  font-size: 0.875rem;
+  color: var(--cor-erro);
+}
+
+.login__botao {
+  width: 100%;
+  padding: 8px;
+  color: #fff;
+  background: var(--cor-primaria);
+  border: none;
+  border-radius: 4px;
+}
+
+.login__botao:hover:not(:disabled) {
+  background: var(--cor-primaria-escura);
+}
+
+.login__botao:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

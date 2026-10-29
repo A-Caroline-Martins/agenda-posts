@@ -1,0 +1,13 @@
+.nao-encontrada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 100vh;
+}
+
+.nao-encontrada__link {
+  color: var(--cor-primaria);
+  text-decoration: underline;
+}

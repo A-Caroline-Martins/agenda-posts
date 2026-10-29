@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar__links a:hover {
+  color: var(--cor-primaria);
+}
+
+.navbar__usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar__badge {
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  background: var(--cor-borda);
+  border-radius: 4px;
+}
+
+.navbar__sair {
+  font-size: 0.875rem;
+  color: var(--cor-erro);
+  background: none;
+  border: none;
+}
+
+.navbar__sair:hover {
+  text-decoration: underline;
+}

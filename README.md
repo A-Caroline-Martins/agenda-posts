@@ -7,7 +7,7 @@ Plataforma de agendamento de posts para redes sociais, com aprovação do client
 
 ## Tecnologias
 
-React + TypeScript + Vite, Tailwind CSS, React Router, FullCalendar, React Hook Form + Zod, TanStack Query e json-server (API mock).
+React + TypeScript + Vite, CSS puro, React Router, FullCalendar, React Hook Form + Zod, TanStack Query e json-server (API mock).
 
 ## Como rodar
 

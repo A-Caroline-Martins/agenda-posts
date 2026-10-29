@@ -1,8 +1,8 @@
 {
   "usuarios": [
-    { "id": "u1", "nome": "Admin Agência", "email": "admin@agencia.com", "tipo": "admin" },
-    { "id": "u2", "nome": "Ana Souza", "email": "ana@padariaflor.com", "tipo": "cliente", "clienteId": "c1" },
-    { "id": "u3", "nome": "Bruno Lima", "email": "bruno@fitlife.com", "tipo": "cliente", "clienteId": "c2" }
+    { "id": "u1", "nome": "Carol Martins", "nomeUsuario": "carol.martins", "email": "carol@agencia.com", "tipo": "admin" },
+    { "id": "u2", "nome": "Ana Souza", "nomeUsuario": "ana.souza", "email": "ana@padariaflor.com", "tipo": "cliente", "clienteId": "c1" },
+    { "id": "u3", "nome": "Bruno Lima", "nomeUsuario": "bruno.lima", "email": "bruno@fitlife.com", "tipo": "cliente", "clienteId": "c2" }
   ],
   "clientes": [
     {

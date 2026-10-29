@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import "./NaoEncontrada.css";
 
 function NaoEncontrada() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-4">
-      <h1 className="text-2xl font-bold">Página não encontrada</h1>
-      <Link to="/" className="text-blue-600 underline">
+    <main className="nao-encontrada">
+      <h1 className="pagina__titulo">Página não encontrada</h1>
+      <Link to="/" className="nao-encontrada__link">
         Voltar para o calendário
       </Link>
     </main>

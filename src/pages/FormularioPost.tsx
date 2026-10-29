@@ -6,8 +6,8 @@ function FormularioPost() {
   const editando = Boolean(id);
 
   return (
-    <main className="p-6">
-      <h1 className="text-2xl font-bold">
+    <main className="pagina">
+      <h1 className="pagina__titulo">
         {editando ? `Editar post ${id}` : "Novo post"}
       </h1>
     </main>

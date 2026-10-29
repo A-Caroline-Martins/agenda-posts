@@ -27,7 +27,10 @@ export const criarPost = (post: Omit<Post, "id">) =>
   request<Post>("/posts", { method: "POST", body: JSON.stringify(post) });
 
 export const atualizarPost = (id: string, dados: Partial<Post>) =>
-  request<Post>(`/posts/${id}`, { method: "PATCH", body: JSON.stringify(dados) });
+  request<Post>(`/posts/${id}`, {
+    method: "PATCH",
+    body: JSON.stringify(dados),
+  });
 
 export const excluirPost = (id: string) =>
   request<void>(`/posts/${id}`, { method: "DELETE" });
@@ -35,7 +38,19 @@ export const excluirPost = (id: string) =>
 // Clientes
 export const getClientes = () => request<Cliente[]>("/clientes");
 
-export const getClienteById = (id: string) => request<Cliente>(`/clientes/${id}`);
+export const getClienteById = (id: string) =>
+  request<Cliente>(`/clientes/${id}`);
 
 // Usuários
 export const getUsuarios = () => request<Usuario[]>("/usuarios");
+
+// Igual ao Instagram: aceita email OU nome de usuário.
+// Se tem "@", busca pelo email; senão, pelo nome de usuário.
+export const buscarUsuarioPorLogin = async (identificador: string) => {
+  const valor = identificador.trim().toLowerCase();
+  const campo = valor.includes("@") ? "email" : "nomeUsuario";
+  const usuarios = await request<Usuario[]>(
+    `/usuarios?${campo}=${encodeURIComponent(valor)}`,
+  );
+  return usuarios[0] ?? null;
+};

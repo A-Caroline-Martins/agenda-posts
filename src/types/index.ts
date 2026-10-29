@@ -20,6 +20,7 @@ export interface Usuario {
   id: string;
   nome: string;
   email: string;
+  nomeUsuario: string; // como no Instagram: letras, números, ponto e _
   tipo: TipoConta;
   clienteId?: string;
 }
